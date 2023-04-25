@@ -11,6 +11,7 @@ body {
 
 .nav_left ul,
 .nav_right ul {
+  margin: 0 60px;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -35,7 +36,7 @@ body {
 
 .nav_center a span {
   color: blue;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .main-screen {
@@ -105,4 +106,49 @@ a {
 
 li {
   list-style-type: none;
+}
+
+.main-recommand {
+  margin-top: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-recommand__sign {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 200px;
+}
+
+.main-recommand__sign span {
+  font-size: large;
+  color: #53585adc;
+}
+.main-recommand__sign button {
+  height: 44px;
+  width: 84px;
+  color: blue;
+
+  /* Button의 border 상하좌우가 다르기 때문에 style로 동일 지정 */
+  border-style: solid;
+  border-radius: 5px;
+  border-color: blue;
+  border-width: 1px;
+  background-color: white;
+  font-size: large;
+  margin-top: 20px;
+}
+
+.main-recommand__sign button:hover {
+  cursor: pointer;
+  background-color: rgb(245, 247, 248);
+  color: darkblue;
+  border-color: darkblue;
+}
+
+.main-recommand__img img {
+  height: 250px;
+  width: 790px;
 }
